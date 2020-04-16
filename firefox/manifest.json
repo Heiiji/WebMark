@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "WebMark",
+  "version": "0.1",
+
+  "description": "An next gen bookmark manager",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon-48.png",
+    "default_title": "webmark",
+    "default_popup": "popup/viewer.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["webmark.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "icons/icon-48.png",
+    "icons/active-48.png"
+  ]
+
+}
