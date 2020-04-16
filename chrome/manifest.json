@@ -3,9 +3,13 @@
   "version" :"0.1",
   "manifest_version": 2,
   "description" :"next gen bookmark",
-  "permissions": ["unlimitedStorage", "tabs", "activeTab",
+  "permissions": [
+    "unlimitedStorage",
+    "tabs",
+    "activeTab",
     "contextMenus",
-    "storage"],
+    "storage"
+  ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -13,6 +17,6 @@
   "browser_action" :
   {
     "default_popup" :"index.html",
-    "default_icon" : "icone.png"
+    "default_icon" : "media/cube.png"
   }
 }
